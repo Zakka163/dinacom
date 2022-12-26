@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bulma CSS Login Page</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+         <script type="text/javascript" src="./data.js">
+          
+        </script>
+        <script type="text/javascript" src="./index.js">
+          
+        </script>
+
+    </head>
+
+    <body>
+       
+        <div class="hero is-fullheight">
+
+            <div class="hero-body is-justify-content-center is-align-items-center">
+
+                <div id="" class="columns is-flex is-flex-direction-column box">
+                  <div id="notif_box" class="has-text-centered has-text-danger"></div>
+                    <form id="login">
+                      <div id="email" class="column">
+                        <label for="email">Email</label>
+                        <input class="input is-primary" type="text" placeholder="Email address">
+                    </div>
+                    <div id ="password" class="column">
+                        <label for="Name">Password</label>
+                        <input class="input is-primary" type="password" placeholder="Password">
+                    </div>
+                        <div class="column">
+                        <button class="button is-primary is-fullwidth" type="submit">Login</button>
+                    </div>
+                      </form> 
+                    
+                    <div class="has-text-centered">
+                        <p class="is-size-7"> Don't have an account? <a href="./register.html" class="has-text-primary">Sign up</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            const form = document.getElementById('login');
+            //let name = document.getElementById('nama');
+            let password = document.getElementById('password');
+            let email = document.getElementById('email')
+            let notif= document.getElementById('notif_box')
+            let notifn = document.createElement('div')
+
+            form.addEventListener('submit',login);</script>
+    </body>
+</html>

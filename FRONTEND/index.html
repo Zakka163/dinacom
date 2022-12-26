@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+</head>
+<body>
+    <script type="text/javascript" src="./data.js"></script>
+    <script type="text/javascript" >const coba=async()=>{
+                let url = `http://localhost:5000/tes`          
+                let res = await fetch(url, {
+                method: 'GET',
+                //Cookie:'token=yeyeye',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'token':data[0]
+                   },
+                });
+
+                
+                let response = await res.json()
+                console.log(data)
+
+                if (response.status == 'succes') {
+                     console.log(response)
+                     //let body = document.getElementById("body")
+                     //window.location.href="./dashboard.html"
+
+                }else{
+                    console.log(response)
+                    //window.location.href="./login.html"
+                }
+                   
+            }
+
+           coba()
+       </script>
+</body>
+</html>
